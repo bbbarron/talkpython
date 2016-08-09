@@ -40,9 +40,9 @@ def printout_birthday_info(num_days):
     if num_days > 0:
         print('You already had your birthday {} days ago'.format(num_days))
     elif num_days < 0:
-        print('Your birthday will be here in {} days'.format(num_days))
+        print('Your birthday will be here in {} days'.format(-num_days))
     else:
-        print('Congratulations! Today is your birthday')
+        print('Congratulations and Happy Birthday!\n Today is your birthday')
 
 
 
