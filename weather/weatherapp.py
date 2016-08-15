@@ -5,7 +5,6 @@ bbarron
 """
 
 
-
 import collections      # Note this is a module from the Python standard library
 import bs4              # Beautiful Soup module which enhances finding and parsing of web data
 import requests         # Module to locate and load web page data
