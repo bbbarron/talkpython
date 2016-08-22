@@ -39,7 +39,8 @@ class Wizard(Creature):
 class SmallAnimal(Creature):
     def get_defensive_roll(self):
         base_roll = super().get_defensive_roll()
-        return base_roll / 2
+        # todo: strength increased for small animals
+        return base_roll * 2
 
 
 class Dragon(Creature):
@@ -56,7 +57,7 @@ class Dragon(Creature):
         # else:
         #     fire_modifier = 1
         # fire_modifier = VALUE_IF_TRUE if SOME TEST else VALUE IF FALSE
-        fire_modifier = 5 if self.breaths_fire else 1
-        scale_modifier = self.scaliness / 10
+        fire_modifier = 2 if self.breaths_fire else 1
+        scale_modifier = self.scaliness / 20
 
         return base_roll * fire_modifier * scale_modifier
