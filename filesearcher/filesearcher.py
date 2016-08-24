@@ -17,6 +17,7 @@ def main():
         print("We can't search for nothing!")
         return
 
+
     matches = search_folders(folder, text)
     match_count = 0
     for m in matches:
@@ -72,13 +73,12 @@ def search_folders(folder, text):
             # all_matches.extend(matches)
             # for m in matches:
             #     yield m
-
-    # return all_matches
+            # return all_matches
 
 
 def search_file(filename, search_text):
     # matches = []
-    with open(filename, 'r', encoding='utf-8') as fin:
+    with open(filename, 'r', encoding='latin1') as fin:
 
         line_num = 0
         for line in fin:
@@ -88,7 +88,7 @@ def search_file(filename, search_text):
                 # matches.append(m)
                 yield m
 
-        # return matches
+                # return matches
 
 
 if __name__ == '__main__':
