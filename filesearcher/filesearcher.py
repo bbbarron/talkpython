@@ -3,7 +3,7 @@ filesearcher.py File searching app. Provided as part of Talk Python to Me
 course in python. Adapted by B. Barron 8/27/2016
 
 Modified to ignore hidden and non-text based files which tripped a Unicode
-error.
+error on Mac OSX.
 
 '''
 
@@ -59,7 +59,7 @@ def get_folder_from_user():  # Reject blank entries and return full file path
 
 
 def get_search_text_from_user():  # return lowercase
-    text = input('What are you searching for [single or partial words only only]? ')
+    text = input('What are you searching for [single or partial words only]? ')
     return text.lower()
 
 
